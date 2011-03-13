@@ -1,0 +1,7 @@
+The bot can be started by running patchouli.php. To keep the bot running even after leaving the session, use screen (in Linux) or an equivalent.
+
+To change the irc network the bot connects to, change $socket = fsockopen("irc.rizon.net", 6667) or die(); which defines the server and port.
+$bot_nick = 'mybot'; is the bot's nick on the network, and $owner = 'owner'; is your nick to be able to access admin commands.
+To make the bot auto join channels and send commands when it joins, put the commands under case "376":
+
+To get information on the IRC protocol, visit http://www.irchelp.org/irchelp/rfc/rfc.html
